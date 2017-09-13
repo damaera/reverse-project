@@ -29,6 +29,7 @@ body {
 .wrapper {
   max-width: 1200px;
   margin: 0 auto;
+  text-align: center;
 }
 
 a {
@@ -43,11 +44,18 @@ img {
 button {
   outline: none;
   border: none;
-  font-weight: bold;
-  background: rgba(#eee, .01);
+  text-transform: uppercase;
+  letter-spacing: .2em;
+  background: rgba(#eee, .005);
   color: #eee;
   cursor: pointer;
   padding: 10px 20px;
+  border: solid 1px rgba(#eee, .2);
+
+  &:hover {
+    background: rgba(#eee, .01);
+  }
+
 }
 
 .clear {

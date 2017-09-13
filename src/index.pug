@@ -16,3 +16,15 @@ block content
 		.btn-list
 			button Buy now
 			
+		form(name="contact" action="message" netlify)
+			p
+				label Your Name :
+					input(type="text" name="name")
+			p
+				label Your Email :
+					input(type="email" name="email")
+			p
+				label Message :
+					textarea(name="message")
+			p
+				button(type="submit") Send

@@ -20,3 +20,5 @@ pageAccelerator({
     obj.isLoading = false
   }
 })
+
+
