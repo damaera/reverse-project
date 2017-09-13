@@ -1,10 +1,50 @@
 @import "includes/base";
 
-header {
-  h1 {
-    font-weight: 300;
-    text-align: center;
-    font-size: 60px;
-    margin-top: 180px;
+@import "block/header";
+@import "block/pace";
+
+body {
+  scroll-behavior: smooth;
+  overflow-y: scroll;
+}
+
+.laser {
+  width: 50%;
+  margin-left: 25%;
+  background-color: tomato;
+  height: 1px;
+  position: fixed;
+  top: 0;
+  z-index: -2;
+  box-shadow: 0 0 10px red;
+  animation: scanning linear 10s infinite;
+  opacity: .5;
+}
+
+.diode {
+  animation: beam .01s infinite;
+}
+
+@keyframes beam {
+  50% {
+    opacity: 0;
   }
 }
+
+@keyframes scanning {
+  100% {
+    transform: translateY(100vh);
+  }
+}
+
+// .loadingBlock {
+//   position: fixed;
+//   height: 100vh;
+//   width: 100%;
+
+//   left: -100%;
+
+//   &.is-show {
+//     left: 0;
+//   }
+// }

@@ -1,0 +1,21 @@
+extends ../_layouts/home
+
+block head_end
+	link(rel="stylesheet" href="/css/style.css") 
+
+block content
+	include ../_partials/header
+
+	div.cover(
+		data-tilt
+		data-tilt-max="10"
+		data-tilt-perspective="5000"
+		data-tilt-speed="1000"
+		data-tilt-glare
+		data-tilt-max-glare="0.1"
+	)
+		img(src="/img/cover-no-cloning-960.jpg")
+
+block body_end
+	script(type="text/javascript" src="/js/tilt.js")
+	script(type="text/javascript" src="/js/script.js")
