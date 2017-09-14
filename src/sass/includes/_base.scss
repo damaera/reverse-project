@@ -1,7 +1,7 @@
 /*	FONTS
 ------------------------*/
 
-@import url('https://fonts.googleapis.com/css?family=Montserrat|Ubuntu+Mono');
+@import url('//fonts.googleapis.com/css?family=Montserrat|Ubuntu+Mono');
 
 /*	TYPOGRAPHY
 –––––––––––––––––––––––––––*/
@@ -12,6 +12,10 @@ body {
   font-size: 100%;
   line-height: 1.5;
   background-color: #131A22;
+  background-image: url("/img/bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   margin: 0;
 }
 
