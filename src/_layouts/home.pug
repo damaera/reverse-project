@@ -7,9 +7,14 @@ html
     link(rel="stylesheet" href="/css/style.css")
 	
   body
-    block content
-    .diode
-      .laser
+    .content
+      include ../_partials/header
+
+      block content
+      .diode
+        .laser
+    .push
+    include ../_partials/footer
 
     script(type="text/javascript" src="/js/pageAccelerator.js")
     script(type="text/javascript" src="/js/icaro.js")

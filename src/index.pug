@@ -1,7 +1,6 @@
 extends _layouts/home
 
 block content
-	include _partials/header
 
 	.wrapper
 		a(href="/stories.html")
@@ -15,17 +14,17 @@ block content
 			)
 				img(src="/img/cover-no-cloning-960.jpg")
 		.btn-list
-			button Buy now
+			button Coming soon
 			
-		form(name="contact" action="message" netlify)
-			p
-				label Your Name :
-					input(type="text" name="name")
-			p
-				label Your Email :
-					input(type="email" name="email")
-			p
-				label Message :
-					textarea(name="message")
-			p
-				button(type="submit") Send
+		//- form(name="contact" action="message" netlify)
+		//- 	p
+		//- 		label Your Name :
+		//- 			input(type="text" name="name")
+		//- 	p
+		//- 		label Your Email :
+		//- 			input(type="email" name="email")
+		//- 	p
+		//- 		label Message :
+		//- 			textarea(name="message")
+		//- 	p
+		//- 		button(type="submit") Send
