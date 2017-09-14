@@ -1,7 +1,7 @@
 /*	FONTS
 ------------------------*/
 
-@import url('https://fonts.googleapis.com/css?family=Montserrat|Playfair+Display');
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Ubuntu+Mono');
 
 /*	TYPOGRAPHY
 –––––––––––––––––––––––––––*/
@@ -64,13 +64,16 @@ button {
 }
 
 .content {
-  min-height: 100%;
+  min-height: calc(100vh - 30px);
 
   /* Equal to height of footer */
   /* But also accounting for potential margin-bottom of last child */
-  margin-bottom: -50px;
 }
-footer,
-.push {
-  height: 50px;
+
+footer{
+  height: 30px;
+  // margin-top: -30px;
+  font-size: .9em;
+  opacity: .3;
+  font-family: 'Ubuntu Mono', monospace;
 }
