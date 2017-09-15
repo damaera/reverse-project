@@ -1,7 +1,7 @@
-@import "includes/base";
+@import "./includes/base";
 
-@import "block/header";
-@import "block/pace";
+@import "./block/header";
+@import "./block/pace";
 
 body {
   scroll-behavior: smooth;
