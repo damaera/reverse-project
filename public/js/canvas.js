@@ -28,9 +28,9 @@ function update() {
 var points = update(),
     pointsMorph = update(),
     grads = [],
-    cycle = 3.8,
-    angle = 0,
-    radius = 10,
+    cycle = Math.random() * 10,
+    angle = Math.random() * 10,
+    radius = Math.random() * 10,
     offset = -80,
     offsetY = height / 2,
     lastMorph = 0,
@@ -43,7 +43,7 @@ function ribbonAnimation() {
     
     if (offset > width + 100) {
         offset = -80;
-        offsetY += 25;
+        offsetY += 40;
         ctx.strokeStyle = colorCycle();
     }
     
@@ -94,6 +94,7 @@ function colorCycle(offset) {
     }
 
     return "rgba(13,18,22,0.4)";
+    // return "rgba(233,18,22,0.4)";
 }
 
 // some people said it only showed in the top left, wait a bit to get dimensions

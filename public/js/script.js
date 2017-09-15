@@ -3,13 +3,20 @@ var obj = icaro({
 })
 
 function init() {
-  // setTimeout(function(){
-    document.querySelector('.content-opacity').style.opacity = 1
-    canvasAnimation()
-  // }, 1000)
+  document.querySelector('.content-opacity').style.opacity = 1
+  canvasAnimation()
+  canvasAnimation()
 }
 
-init()
+
+var doit;
+doit = setTimeout(init, 100);
+window.onresize = function(){
+  clearTimeout(doit);
+  doit = setTimeout(init, 100);
+};
+
+// doit()
 
 obj.listen(function(changes) {
   var isLoading = changes.get('isLoading')

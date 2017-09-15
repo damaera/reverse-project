@@ -12,13 +12,6 @@ body {
   opacity: 0;
 }
 
-.paraxify,
-%paraxify {
-	background-attachment: fixed;
-	background-position: center center;
-	background-size: cover;
-}
-
 canvas {
   position: fixed;
   opacity: .2;
@@ -82,14 +75,29 @@ p {
 }
 
 .card {
-  width: 40%;
+  width: 30%;
   text-align: left;
-  margin: 5%;
   // float: left;
+  vertical-align: top;
   display: inline-block;
+  margin: 1.5%;
 
+  
+  @media screen and (max-width: 1024px) {
+    width: 45%;
+  }
 
   @media screen and (max-width: 720px) {
     width: 90%;
+  }
+}
+
+.story {
+  &:hover {
+    opacity: .7;
+
+    img {
+
+    }
   }
 }
