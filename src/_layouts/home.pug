@@ -14,15 +14,18 @@ html
 
       meta(property="og:title" content="Reverse Project &mdash; Official Website")
       meta(property="og:type" content="website")
-      <meta property="og:url" content="http://reverse-project.com/" />
-      <meta property="og:image" content="http://reverse-project.com/img/share.jpg" />
-      <meta property="og:description" content="Reverse Project &mdash; Official Website" />
+      meta(property="og:url" content="http://reverse-project.com/")
+      meta(property="og:image" content="http://reverse-project.com/img/share.jpg")
+      meta(property="og:description" content="Reverse Project &mdash; Official Website")
 
-  body
+  body.jarallax
     .content
+      canvas
+
       include ../_partials/header
-      
-      block content
+        
+      .content-opacity
+        block content
 
     include ../_partials/footer
 
@@ -30,4 +33,5 @@ html
     script(type="text/javascript" src="/js/icaro.js")
     script(type="text/javascript" src="/js/pace.js")
     script(type="text/javascript" src="/js/tilt.js")
+    script(type="text/javascript" src="/js/canvas.js")
     script(type="text/javascript" src="/js/script.js")

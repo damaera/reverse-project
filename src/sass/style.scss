@@ -8,6 +8,23 @@ body {
   overflow-y: scroll;
 }
 
+.content-opacity {
+  opacity: 0;
+}
+
+.paraxify,
+%paraxify {
+	background-attachment: fixed;
+	background-position: center center;
+	background-size: cover;
+}
+
+canvas {
+  position: fixed;
+  opacity: .2;
+  z-index: -1;
+}
+
 .laser {
   width: 50%;
   margin-left: 25%;
@@ -51,6 +68,10 @@ h2 {
   text-transform: uppercase;
   letter-spacing: .3em;
 }
+p {
+  font-family: 'Ubuntu Mono', monospace;
+  font-size: 1em;
+}
 .w50 {
   float: left;
   width: 50%;
@@ -58,18 +79,17 @@ h2 {
   @media screen and (max-width: 720px) {
     width: 100%;
   }
+}
 
-  p {
-    font-family: 'Ubuntu Mono', monospace;
-    font-size: 1.1em;
-  }
+.card {
+  width: 40%;
+  text-align: left;
+  margin: 5%;
+  // float: left;
+  display: inline-block;
 
 
-  .list {
-    padding: 10px;
-  }
-
-  .member {
-    // padding: 10px;
+  @media screen and (max-width: 720px) {
+    width: 90%;
   }
 }

@@ -14,6 +14,7 @@ body {
   background-color: #131A22;
   background-image: url("/img/bg.jpg");
   background-repeat: no-repeat;
+	background-attachment: fixed;
   background-size: cover;
   background-position: center;
   margin: 0;
@@ -72,6 +73,10 @@ button {
 
   /* Equal to height of footer */
   /* But also accounting for potential margin-bottom of last child */
+}
+
+.content-opacity {
+  transition: opacity .5s;
 }
 
 footer{
