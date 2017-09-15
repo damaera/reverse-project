@@ -1,13 +1,23 @@
 doctype html
 html
   head
-    title= title
+    //- title= title
     meta(charset="utf-8")
     meta(name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1")
     link(rel="stylesheet" href="/css/style.css")
 
     block meta
-	
+      title Reverse Project &mdash; Official Website
+      meta(name="description" content="Reverse Project &mdash; Official Website")
+
+      meta(name="twitter:card" value="summary")
+
+      meta(property="og:title" content="Reverse Project &mdash; Official Website")
+      meta(property="og:type" content="website")
+      <meta property="og:url" content="http://reverse-project.com/" />
+      <meta property="og:image" content="http://reverse-project.com/img/share.jpg" />
+      <meta property="og:description" content="Reverse Project &mdash; Official Website" />
+
   body
     .content
       include ../_partials/header

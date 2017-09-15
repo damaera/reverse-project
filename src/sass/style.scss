@@ -37,6 +37,20 @@ body {
   }
 }
 
+h4  {
+  font-size: .7em;
+  margin: 0;
+  opacity: .5;
+  text-transform: uppercase;
+  letter-spacing: .3em;
+}
+
+h2 {
+  font-size: .9em;
+  opacity: .7;
+  text-transform: uppercase;
+  letter-spacing: .3em;
+}
 .w50 {
   float: left;
   width: 50%;
@@ -50,11 +64,6 @@ body {
     font-size: 1.1em;
   }
 
-  h4  {
-    font-size: .8em;
-    margin: 0;
-    opacity: .5;
-  }
 
   .list {
     padding: 10px;
