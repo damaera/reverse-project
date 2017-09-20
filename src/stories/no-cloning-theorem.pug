@@ -1,5 +1,86 @@
 extends ../_layouts/home
 
 block content
+	style.
+		.wrapper {
+			position: relative;
+		}
+		img.desolate {
+			width: 640px;
+			position: absolute;
+			left: 0;
+			top: 0;
+			opacity: .9;
+			z-index: -1;
+		}
+		.context {
+			max-width: 640px;
+			margin: 0 auto;
+			position: relative;
+			top: 40px;
+			left: 120px;
+			padding: 0 40px 20px 40px;
+			background: #131a22;
+			opacity: .95;
+			text-align: left;
+		}
+
+		.header {
+			position: fixed;
+		}
+
+		.pre {
+			white-space: pre;
+		}
 	.wrapper
-		h2 No Cloning Theorem
+		img.desolate(src='/img/stories/noclone2.jpg')
+		.context
+			h2
+				br
+				| No-cloning Theorem
+
+			p In science, the no-cloning theorem states that it is impossible to make an identical copy of an unknown quantum state arbitrarily. Including cloning a child.
+
+			h4 Lyric
+			p.pre.
+				ねぇ、子供のとき
+				本当に君が好きでわなかった
+				君わクロンです
+				本当の人間でわない
+
+				これ が 届くまでわ
+				進んで行くと決めたので
+				絆を繋いで
+				運命を開放して, yeiyeiye ha a a a
+
+				この世界が終わったとしても
+				この未来が奪われても, ha a a
+
+				殺すことができない
+				ごめん ね、iyeyeah
+				真実はあとも, 少しで侵される
+				心の奥にわぬくもりお感じられるよ
+				死んではいけない
+				君は兄弟です
+
+				これが僕の呪い　
+				犯した罪の深さ
+				ねぇ前向いて
+				今すぐ一緒に行こう, yeiyeiye ha a a a
+
+				この世界が終わったとしても
+				この未来が奪われても, ha a a
+
+				殺すことができない
+				ごめん ね、iyeyeah
+				真実はあとも, 少しで侵される
+				心の奥にわぬくもりお感じられるよ
+				死んではいけない
+				君は兄弟です
+
+				殺すことができない
+				ごめん ね、iyeyeah
+				真実はあとも, 少しで侵される
+				心の奥にわぬくもりお感じられるよ
+				死んではいけない
+				君は兄弟です

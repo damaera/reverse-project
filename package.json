@@ -27,5 +27,8 @@
     "pug",
     "sass",
     "browsersync"
-  ]
+  ],
+  "dependencies": {
+    "parallax-js": "^3.1.0"
+  }
 }

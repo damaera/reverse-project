@@ -81,6 +81,9 @@ p {
   vertical-align: top;
   display: inline-block;
   margin: 1.5%;
+  padding: 20px;
+  border-radius: 2px;
+  height: 270px;
 
   
   @media screen and (max-width: 1024px) {
@@ -97,7 +100,13 @@ p {
     opacity: .7;
 
     img {
-
+      
     }
   }
+}
+
+.wrapper720 {
+  padding: 20px;
+  max-width: 720px;
+  display: inline-block;
 }

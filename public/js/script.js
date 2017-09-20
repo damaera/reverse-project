@@ -6,6 +6,12 @@ function init() {
   document.querySelector('.content-opacity').style.opacity = 1
   canvasAnimation()
   canvasAnimation()
+
+  var $imgDesolate = document.querySelector('img.desolate')
+  window.onscroll = function(e) {
+    $imgDesolate.style.top = window.scrollY / 1.5 + 'px'
+    //- console.log(window.scrollY / 10)
+  }
 }
 
 
