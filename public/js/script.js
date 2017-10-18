@@ -49,9 +49,7 @@ document.onreadystatechange = function () {
      setTimeout(function(){
        document.querySelector('#preload').classList.add('hide');
      }, 1000);
-     setTimeout(function(){
-       document.querySelector('#preload').remove();
-     }, 2000)
+
    }
 }
 
