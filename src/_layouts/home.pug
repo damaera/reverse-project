@@ -5,6 +5,8 @@ html
     meta(charset="utf-8")
     meta(name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1")
     link(rel="stylesheet" href="/css/style.css")
+    link(rel="stylesheet" href="/css/preload.css")
+      
 
     block meta
       title Reverse Project &mdash; Official Website
@@ -19,9 +21,12 @@ html
       meta(property="og:description" content="Reverse Project &mdash; Official Website")
 
   body.jarallax
-    .content
-      canvas
 
+    .content
+      .f.f-ctr.mdl#preload
+        #wrapper
+          canvas#stage
+      canvas#drawer
       include ../_partials/header
         
       .content-opacity
@@ -31,7 +36,8 @@ html
 
     script(type="text/javascript" src="/js/pageAccelerator.js")
     script(type="text/javascript" src="/js/icaro.js")
-    script(type="text/javascript" src="/js/pace.js")
+    //- /*script(type="text/javascript" src="/js/pace.js")*/
     script(type="text/javascript" src="/js/tilt.js")
+    script(type="text/javascript" src="/js/preload.js")
     script(type="text/javascript" src="/js/canvas.js")
     script(type="text/javascript" src="/js/script.js")

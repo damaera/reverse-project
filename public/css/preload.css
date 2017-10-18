@@ -1,0 +1,52 @@
+
+#wrapper {
+width: 100%;
+padding: 0;
+margin: 0 auto;
+max-width: 100%;
+text-align: center;
+
+}
+#preload{
+height: 100vh;
+background: black;
+overflow: hidden;
+margin: 0;
+padding: 0;
+width: 100%;
+z-index: 999;
+position: fixed;
+top: 0;
+left: 0;
+transition: all 1s ease;
+}
+
+#preload.hide{
+  opacity: 0;
+  visibility: hidden;
+}
+#preload img {
+display: none;
+}
+
+canvas#stage {
+box-sizing: border-box;
+margin: 20px auto 0;
+text-align: center;
+max-width: 100%;
+letter-spacing: .3em;
+opacity: 1;
+position: relative;
+margin-left: -5%;
+z-index: 999;
+}
+.f{
+display: flex;
+}
+.f-ctr{
+align-items: center;
+}
+.mdl{
+align-self: center;
+align-content: center;
+}

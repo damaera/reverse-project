@@ -31,12 +31,29 @@ obj.listen(function(changes) {
     if ($tilt) {
       $tilt.vanillaTilt.destroy()
     }
+    reversePreload();
+    setTimeout(function(){
+      document.querySelector('#preload').classList.add('hide');
+    }, 1000)
+    setTimeout(function(){
+      document.querySelector('#preload').remove();
+    }, 2000)
   } else {
     VanillaTilt.init($tilt);
     init()
   }
 })
-
+document.onreadystatechange = function () {
+   if (document.readyState == "complete") {
+     // document is ready. Do your stuff here
+     setTimeout(function(){
+       document.querySelector('#preload').classList.add('hide');
+     }, 1000);
+     setTimeout(function(){
+       document.querySelector('#preload').remove();
+     }, 2000)
+   }
+}
 
 pageAccelerator({
   beforeLoading: function(e) {

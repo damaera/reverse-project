@@ -1,6 +1,6 @@
 function canvasAnimation() {
-  
-var canvas = document.querySelector('canvas'),
+
+var canvas = document.querySelector('canvas#drawer'),
     ctx = canvas.getContext('2d'),
     width = window.innerWidth,
     height = window.innerHeight;
@@ -40,14 +40,14 @@ var points = update(),
 function ribbonAnimation() {
     angle -= 0.01;
     offset++;
-    
+
     if (offset > width + 100) {
         offset = -80;
         offsetY += 40;
         ctx.strokeStyle = colorCycle();
     }
-    
-    
+
+
     ctx.save();
     ctx.translate(offset - radius, (offsetY - radius) + Math.sin(angleY += 0.01) * 50);
     ctx.transform(1, 0, 0.8, 1, 0, 0);
@@ -104,11 +104,11 @@ setTimeout(function(){
 
   canvas.width = width;
   canvas.height = height;
-  
+
   ctx.fillStyle = "rgba(0,0,0,0)";
   ctx.strokeStyle = colorCycle();
   ctx.globalCompositeOperation = "lighter";
-  
+
   render();
 }, 200);
 
