@@ -35,9 +35,6 @@ obj.listen(function(changes) {
     setTimeout(function(){
       document.querySelector('#preload').classList.add('hide');
     }, 1000)
-    setTimeout(function(){
-      document.querySelector('#preload').remove();
-    }, 2000)
   } else {
     VanillaTilt.init($tilt);
     init()
