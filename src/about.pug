@@ -1,6 +1,50 @@
 extends _layouts/home
 
 block content
-  include _partials/header
-  div.wrapper
-    h1 TEST HEADER
+
+  .wrapper
+    .w50
+      h2
+        | 約
+        br
+        | About
+      p リバースプロジェクトは、音楽で伝えられたオリジナルのストーリーを作成することに重点を置いたプロジェクトです。 最初は、曲が伝える話は、プロットやキャラクターを介して関連していないように見えるかもしれませんが、あなたが学ぶほど、逆プロジェクトのすべてがつながっていることが分かります。
+      p Reverse Project is a project that focused on creating Original stories that told by music. While at first, the stories that the songs tell might not seem to be related through the plot or the characters, the more you learn, the more you will realize that everything in Reverse Project is connected.
+    .w50
+      div(style="opacity: .8")
+        img(src="/img/logo-reverse-light.png" width="300")
+        br
+        img(src="/img/text-reverse-light.png" width="200")
+    .clear
+    div
+      h2
+        | メンバー
+        br
+        | Member
+      table(style="width:100%; table-layout: fixed;")
+        tr
+          td
+            h4
+              | 音楽プロデューサー
+              br
+              | Music Producer
+          td
+            h4
+              | ボーカリスト
+              br
+              | Vocalists
+          td
+            h4
+              | イラストレーター
+              br
+              | Illustrator
+        tr
+          td
+            .member Era
+          td
+            .member Aika
+            .member Giita
+          td
+            .member Deronoitz
+    .clear
+

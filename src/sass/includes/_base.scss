@@ -1,7 +1,7 @@
 /*	FONTS
 ------------------------*/
 
-@import url('https://fonts.googleapis.com/css?family=Montserrat|Playfair+Display');
+@import url('//fonts.googleapis.com/css?family=Montserrat|Ubuntu+Mono');
 
 /*	TYPOGRAPHY
 –––––––––––––––––––––––––––*/
@@ -12,6 +12,11 @@ body {
   font-size: 100%;
   line-height: 1.5;
   background-color: #131A22;
+  background-image: url("/img/bg.jpg");
+  background-repeat: no-repeat;
+	background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
   margin: 0;
 }
 
@@ -60,4 +65,24 @@ button {
 
 .clear {
   clear: both;
+}
+
+.content {
+  min-height: calc(100vh - 30px);
+  // padding: 20px;
+
+  /* Equal to height of footer */
+  /* But also accounting for potential margin-bottom of last child */
+}
+
+.content-opacity {
+  transition: opacity .5s;
+}
+
+footer{
+  height: 30px;
+  // margin-top: -30px;
+  font-size: .9em;
+  opacity: .3;
+  font-family: 'Ubuntu Mono', monospace;
 }

@@ -1,0 +1,20 @@
+doctype html
+html
+  head
+    title= title
+    meta(charset="utf-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1")
+    link(rel="stylesheet" href="/css/style.css")
+
+  body
+    .content
+      include ../_partials/header
+
+      block content
+    include ../_partials/footer
+
+    script(type="text/javascript" src="/js/pageAccelerator.js")
+    script(type="text/javascript" src="/js/icaro.js")
+    script(type="text/javascript" src="/js/pace.js")
+    script(type="text/javascript" src="/js/tilt.js")
+    script(type="text/javascript" src="/js/script.js")

@@ -1,0 +1,65 @@
+extends _layouts/home
+
+block content
+  style.
+    .wrapper {
+      position: relative;
+    }
+    img.desolate {
+      width: 640px;
+      position: absolute;
+      left: 0;
+      top: 0;
+      opacity: .9;
+      z-index: -1;
+    }
+    .context {
+      max-width: 640px;
+      margin: 0 auto;
+      position: relative;
+      top: 40px;
+      left: 120px;
+      padding: 0 40px 20px 40px;
+      background: #131a22;
+      opacity: .95;
+      text-align: left;
+    }
+    h3 {
+      margin-bottom: 0;
+    }
+  .wrapper
+    img.desolate(src='/img/stories/planet.jpg')
+    .context
+      h2
+        br
+        | Stories / Song List
+
+        h4 Prelude
+        p Suddenly moon, sun, planet, galaxy and all other celestial object are begin to moving closer and closer as time goes by. Universe’s expansion eventually reverses, blueshift happens. But humanity must survive, so humanity make some plan.
+
+        p Servent trying to make Superintelligence AI named SHV-A. But things don’t go well. Just after the creation, SHV-A goes berserk destroying everything. Servent can’t control it, adding another crisis for humanity. it’s just getting worse.
+
+        p The story begin at the city of Shelter-02, it's humanity last hope for fighting SHV-A and surviving blueshift
+      div
+        br
+        br
+        h4 Song List
+        a(href="/stories/no-cloning-theorem.html")
+          .w50
+            .story
+              //- img(src="/img/no-cloning-theorem.jpg", alt="No-cloning Theorem")
+              h3 No-cloning Theorem
+              //- p In science, the no-cloning theorem states that it is impossible to make an identical copy of an unknown quantum state arbitrarily. Including cloning a child.
+              h4 Music: Era, Vocal: Aika
+
+        a(href="/stories/desolate.html")
+          .w50
+            .story
+              //- img(src="/img/no-cloning-theorem.jpg", alt="Desolate")
+              h3 Desolate
+              //- p Myria is trapped in void (negative dimension). In this dimension, time is freeze. In the darkness, in the silence, she will travel eternity
+              h4 Music: Era, Vocal: Giita
+
+        .clear
+        br
+        br
