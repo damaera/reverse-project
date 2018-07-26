@@ -63,6 +63,23 @@ button {
 
 }
 
+.youtube {
+  max-width: 100%;
+}
+
+.social-media {
+  font-weight: bold;
+  font-size: .8em;
+  letter-spacing: .3em;
+  line-height: 1.5;
+  text-transform: uppercase;
+
+  a {
+    padding: 10px;
+    display: inline-block;
+  }
+}
+
 .clear {
   clear: both;
 }

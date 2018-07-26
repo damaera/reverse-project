@@ -85,7 +85,7 @@ p {
   border-radius: 2px;
   height: 270px;
 
-  
+
   @media screen and (max-width: 1024px) {
     width: 45%;
   }
@@ -100,7 +100,7 @@ p {
     opacity: .7;
 
     img {
-      
+
     }
   }
 }
@@ -109,4 +109,9 @@ p {
   padding: 20px;
   max-width: 720px;
   display: inline-block;
+}
+
+.new-class-test{
+  position: absolute;
+  width: 100%;
 }
