@@ -1,0 +1,209 @@
+.indexPage
+  p#indexType
+    position: absolute
+    font-size: 12px
+    color: rgba(#fff, .2)
+    bottom: 30px
+    left: 50px
+    pointer-events: none
+    line-height: 1.5
+    @media screen and (max-width: 1440px)
+      max-width: 325px
+  .news
+    max-width: 560px
+    margin: 0 auto
+    padding: 20px 30px
+    // background-color: rgba(#fff,.6)
+    color: #000
+    margin-top: calc(100vh * 45 / 984)
+    // background-image: url('../assets/Des.jpg')
+    // background-size: 120%
+    // background-position: 130% 70%
+    // transition: background .25s ease
+    // &:hover
+    //   background-position: 45% 25%
+    //   background-size: 100%
+    p
+      margin: 0
+      line-height: 1.5
+      font-size: 14px
+    p.a
+      font-weight: 500
+      display: inline
+      align-self: flex-start
+      font-style: italic
+      margin-right: 15px
+      padding: 0 9px 0 15px
+      background: $secondary-color
+      min-width: 50px
+      white-space: nowrap
+      color: #fff
+      border-radius: 3px
+    a
+      color: #fff
+      &:hover
+        text-decoration: underline
+  .mainContent
+    top: 30vh
+    position: relative
+    .logo img
+      height: calc(100vh * 295 / 984)
+      width: auto
+.bgNoise
+  background: url(../assets/noise.png)
+  -webkit-animation: noiseFrame 0.3s linear 0s infinite
+  animation: noiseFrame 0.3s linear 0s infinite
+  -webkit-animation-fill-mode: both
+  animation-fill-mode: both
+  position: absolute
+  width: 100%
+  height: 100%
+@keyframes noiseFrame
+  0%
+    background-position: 50px 0
+  40%
+    background-position: 10px 50%
+  80%
+    background-position: 300px 100%
+  100%
+    background-position: 0 0
+
+
+.bg-wrapper
+  position: absolute
+  z-index: -1
+  height: 100%
+  max-height: 100vh
+  overflow: hidden
+  width: 100%
+  &::after
+    content: ''
+    background-image: url('../assets/bg_mesh_black.png')
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    z-index: 0
+
+  h1
+    position: absolute
+    top: 40%
+    left: -2%
+    color: rgba(0,0,0,.2)
+    font-family: $title-font
+    font-weight: 400
+    font-size: 56px
+    letter-spacing: 2px
+    transform: rotateZ(-90deg)
+
+  img
+    width: 100%
+    height: 100%
+    object-fit: cover
+    opacity: .7
+    left: -60px!important
+.indexMenu
+  margin-top: calc(100vh * 135 / 984)
+  ul
+    li
+      margin: 0 20px
+    a
+      font-weight: 300
+      font-style: italic
+      font-size: 19px
+      letter-spacing: .5px
+      padding: 3px 5px
+      position: relative
+      transition: color .2s ease
+      &::before
+        content: ''
+        position: absolute
+        width: 0
+        height: 100%
+        top: 0
+        left: 0
+        background: #fff
+        transition: width .15s ease
+      &::after
+        content: ''
+        width: 2px
+        height: 0
+        position: absolute
+        background: #fff
+        top: -100%
+        left: 50%
+        z-index: -1
+        transition: height .2s ease
+        transition-delay: .15s
+      &:hover
+        color: #000
+        &::before
+          width: 100%
+          z-index: -1
+        &::after
+          height: 90px
+
+// END OF INDEX CSS
+.characterPage
+  span.copyright
+    color: #000
+    opacity: .8
+.characterPage
+  // background: #fff
+  min-height: 100vh
+  ul.group
+    max-width: 700px
+    margin: 0 auto
+    margin-top: 60px
+    li
+      img
+        transition: transform .1s ease
+      &:hover
+        img
+          transform: scale(1.05)
+    h5
+      color: #000
+      font-family: $title-font
+      font-size: 19px
+      letter-spacing: 1px
+      font-weight: 300
+    img
+      height: calc(100vh * 240 / 984)
+  .bg-wrapper
+    background: #fff
+    img
+      left: 0!important
+
+    &::after
+      display: none
+  .bgNoise
+    opacity: .3
+  .logo
+    margin-bottom: 30px
+    img
+      // height: 180px
+      height: calc(100vh * 180 / 984)
+      width: auto
+  p
+    color: #000
+    font-style: italic
+    font-weight: 300
+    font-size: 14px
+  .head p
+    max-width: 700px
+    text-align: center
+.asd
+  // -webkit-animation: bounceEl 0.3s linear 0s infinite
+  animation-name: bouceEl
+  animation-duration: 1s
+  -webkit-animation-fill-mode: both
+  animation-fill-mode: both
+  animation-iteration-count: infinite
+@keyframes bouceEl
+  0%
+    transform: translateY(0px)
+  50%
+    transform: translateY(-20px)
+  100%
+    transform: translateY(0px)

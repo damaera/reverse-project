@@ -1,23 +1,26 @@
-## Pug-Sass Starter project.
+# Simple Gulp with SASS template
 
-[![Build Status][travis-image]][travis-url]
+This is a very simple document startup template. We have gulp with sass set up. We also have autoprefixer and browserSync installed. There are no unnecessary packages and no meddling with your JS or images.
 
-This is a Pug and Sass starter project using gulp for task automation.
+## Usage
+The usage is fairly simple. `npm install` and later `gulp watch`.
+You'll get the hang of it. ;)
 
-### Note
-If you still need Jade support use [this](https://github.com/azemoh/gulp-jade-sass-starter) project instead.
+## SASS Compiling Rules
+All SASS files need to be .scss and located within the scss folder. SASS will only be compiling two files (print.scss && style.scss) by default. This behavior is hardcoded in our gulpfile.js on line 1.
 
-This project uses...
+It is easy to change this (read on), but generally we tend to use `@import` to include more files, as shown in the default style.scss.
 
-1. [browser-sync](https://github.com/browsersync/browser-sync) to launch a local server and do live reloads as sass and pug files changes
-2. [gulp-pug](https://github.com/jamen/gulp-pug) to compile pug files.
-3. [gulp-data](https://github.com/colynb/gulp-data) to pass data to pug. this project uses JSON as the data source, however you can generate data objects from a variety of sources: json, front-matter, database, etc... see gulp-data [README](https://github.com/colynb/gulp-data)
-4. [gulp-sass](https://github.com/dlmanning/gulp-sass) to compile sass files.
-5. [gulp-autoprefixer](https://github.com/sindresorhus/gulp-autoprefixer) to add vendor prefixes to css files
+All compiled files will compile within the app/css directory, under the same filename. For example the default files will compile as app/css/style.css and app/css/print.css.
 
-### To run
-- Execute `npm install` from this directory to install dev dependencies.
-- Execute `gulp` to run all tasks, launch the browser sync local server and watch for changes.
+## Terms that apply
+- All other files including JS and HTML are free to stay in the app folder.
+- Generally, you will upload only the contents of the "app" folder to the server.
+- Autoprefixer adds browser prefixes only after compiling success of SCSS.
+- .gitignore is set up for OSX, Windows and Node.
+- On every save of every file, browser will be refreshed.
+- There are limits as we watch only for HTML, JS and SCSS files for reload.
+- Manual page reload is needed for images directories and other.
 
-[travis-url]: https://travis-ci.org/azemoh/gulp-pug-sass-seed
-[travis-image]: https://travis-ci.org/azemoh/gulp-pug-sass-seed.svg
+## Gulpfile.js
+Gulpfile has not been modified much. Practically on line 1 you are offered an array of SCSS files to compile and that is all there is to it.
