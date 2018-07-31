@@ -70,10 +70,10 @@
 
 
 .bg-wrapper
-  position: absolute
+  position: fixed
   z-index: -1
   height: 100%
-  max-height: 100vh
+  min-height: 100vh
   overflow: hidden
   width: 100%
   &::after
@@ -85,6 +85,7 @@
     width: 100%
     height: 100%
     z-index: 0
+
 
   h1
     position: absolute
@@ -145,6 +146,41 @@
           height: 90px
 
 // END OF INDEX CSS
+.characterThumb
+  max-width: 320px
+  li
+    margin: 5px
+    &:first-child
+      margin-left: 0
+    &:nth-child(5n)
+      margin-left: 0
+  a
+    position: relative
+    height: 70px
+    width: 70px
+    background: #000
+    display: block
+    border-radius: 50%
+    overflow: hidden
+    box-shadow: 4px 4px 13px rgba(0,0,0,.2)
+    transition: all .16s ease
+    &:hover
+      box-shadow: 4px 5px 20px rgba(0,0,0,.3)
+      transform: scale(1.1)
+    img
+      width: 100%
+    &.hide
+      background: #fff
+      cursor: default
+      span
+        position: absolute
+        color: rgba(0,0,0,.2)
+        font-size: 25px
+        top: 15px
+        left: 40%
+        font-weight: 600
+      .bgNoise
+        opacity: 1
 .characterPage
   span.copyright
     color: #000
@@ -152,6 +188,57 @@
 .characterPage
   // background: #fff
   min-height: 100vh
+  position: relative
+  .groupChar
+    position: relative
+    width: 85%
+    // margin: 0 auto
+    div[contain].on
+      .nameTag
+        opacity: 1
+        transform: none
+    div[contain="aki"]
+      .nameTag
+        top: 30vh
+        right: 35%
+    .nameTag
+      position: absolute
+      z-index: 2
+      width: auto
+      opacity: 0
+      transform: translateX(30px)
+      transition: all .325s cubic-bezier(0.74, 0.07, 0.25, 1)
+
+      p
+        font-weight: 500
+        font-size: 15px
+        border-bottom: solid 2px #4f5456
+      span
+        color: #7a8184
+        font-weight: 300
+        font-size: 13px
+        font-style: italic
+    img
+      position: absolute
+      width: 100%
+      top: 0
+      left: 0
+      transition: .225s
+      &.off
+        filter: grayscale(1) blur(2px)
+        opacity: .4
+      &.on
+        filter: grayscale(0)
+        opacity: 1
+  .mainInformation
+    width: 40%
+    margin: 60px 0 100px
+  .pictureInformation
+    width: 60%
+    margin: 85px 0
+  .group-logo img
+    max-width: 170px
+    margin-bottom: 20px
   ul.group
     max-width: 700px
     margin: 0 auto
@@ -186,7 +273,7 @@
       height: calc(100vh * 180 / 984)
       width: auto
   p
-    color: #000
+    color: #333
     font-style: italic
     font-weight: 300
     font-size: 14px
