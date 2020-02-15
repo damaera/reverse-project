@@ -1,9 +1,9 @@
 import * as React from "react";
 import Link from "next/link";
-import { Layout } from "../components/Layout";
+import { Layout } from "../../components/Layout";
 
-const AboutPage: React.FunctionComponent = () => (
-  <Layout title="About | Next.js + TypeScript Example">
+const DiscographyIndexPage: React.FunctionComponent = () => (
+  <Layout title="Discography">
     <h1>About</h1>
     <p>This is the about page</p>
     <p>
@@ -14,4 +14,4 @@ const AboutPage: React.FunctionComponent = () => (
   </Layout>
 );
 
-export default AboutPage;
+export default DiscographyIndexPage;

@@ -1,17 +1,20 @@
 import * as React from "react";
-import Link from "next/link";
-import Layout from "../components/Layout";
+import { Layout } from "../components/Layout";
 import { NextPage } from "next";
+import { RevocRotatingClock } from "./discography/revoc";
+import { Container } from "../components/Container";
+import Link from "next/link";
 
 const IndexPage: NextPage = () => {
   return (
     <Layout title="Home | Next.js + TypeScript Example">
-      <h1>Hello Next.js 👋</h1>
-      <p>
-        <Link href="/about">
-          <a>About</a>
+      <Container>
+        <Link href="/discography/revoc">
+          <a>
+            <RevocRotatingClock size={400} />
+          </a>
         </Link>
-      </p>
+      </Container>
     </Layout>
   );
 };
