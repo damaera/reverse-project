@@ -4,7 +4,7 @@ import { NextPage } from "next";
 import { Container } from "../components/Container";
 
 const ErrorPage: NextPage<{}> = () => (
-  <Layout title="About | Next.js + TypeScript Example">
+  <Layout title="Not Found" description="Reality not found">
     <Container>
       <h1>404</h1>
       <h3>Lost. //</h3>

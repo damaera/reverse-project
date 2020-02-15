@@ -3,17 +3,18 @@ import { Layout } from "../components/Layout";
 import { NextPage } from "next";
 import { RevocRotatingClock } from "./discography/revoc";
 import { Container } from "../components/Container";
-import Link from "next/link";
 
 const IndexPage: NextPage = () => {
   return (
-    <Layout title="Home | Next.js + TypeScript Example">
+    <Layout>
       <Container>
-        <Link href="/discography/revoc">
-          <a>
-            <RevocRotatingClock size={400} />
-          </a>
-        </Link>
+        <h1>REVOC</h1>
+        <h3>
+          Reverse Vocaloid Cover
+          <br />
+          Coming soon!
+        </h3>
+        <RevocRotatingClock size={700} />
       </Container>
     </Layout>
   );

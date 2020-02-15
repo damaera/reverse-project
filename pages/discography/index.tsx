@@ -1,17 +1,37 @@
 import * as React from "react";
 import Link from "next/link";
 import { Layout } from "../../components/Layout";
+import { Container } from "../../components/Container";
 
-const DiscographyIndexPage: React.FunctionComponent = () => (
+const Page: React.FunctionComponent = () => (
   <Layout title="Discography">
-    <h1>About</h1>
-    <p>This is the about page</p>
-    <p>
-      <Link href="/">
-        <a>Go home</a>
+    <Container>
+      <h1>Discography</h1>
+
+      <Link href="/discography/revoc">
+        <div className="item">
+          <h3>REVOC</h3>
+          <h4>Tracks: 6</h4>
+          <h4>Released: February 2020</h4>
+          <h4>Label: Erased Records</h4>
+        </div>
       </Link>
-    </p>
+      <Link href="/discography/chapter-01">
+        <div className="item">
+          <h3>Chapter 01</h3>
+          <h4>Tracks: 6</h4>
+          <h4>Released: June 2018</h4>
+          <h4>Label: Erased Records</h4>
+        </div>
+      </Link>
+    </Container>
+    <style jsx>{`
+      .item {
+        padding: 20px 0;
+        border-top: solid 1px #222;
+      }
+    `}</style>
   </Layout>
 );
 
-export default DiscographyIndexPage;
+export default Page;

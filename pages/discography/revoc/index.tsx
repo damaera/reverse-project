@@ -1,6 +1,6 @@
 import * as React from "react";
-import { Layout } from "../../components/Layout";
-import { Container } from "../../components/Container";
+import { Layout } from "../../../components/Layout";
+import { Container } from "../../../components/Container";
 
 const REVOC_IMG_PATH = "/img/discography/revoc";
 
@@ -66,14 +66,15 @@ export const RevocRotatingClock: React.FunctionComponent<{ size: number }> = ({
   </>
 );
 
-const DiscographyRevocPage: React.FunctionComponent = () => (
-  <Layout title="Discography">
+const Page: React.FunctionComponent = () => (
+  <Layout title="Discography - REVOC">
     <Container>
       <h1>REVOC</h1>
       <h3>REVerse VOCaloid COVER</h3>
+      <h3>Coming soon!</h3>
       <RevocRotatingClock size={400} />
     </Container>
   </Layout>
 );
 
-export default DiscographyRevocPage;
+export default Page;
