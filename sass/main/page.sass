@@ -86,7 +86,10 @@
     height: 100%
     z-index: 0
 
-
+  video
+    height: 100%
+    width: 100%
+    object-fit: cover
   h1
     position: absolute
     top: 40%
@@ -162,7 +165,7 @@
     display: block
     border-radius: 50%
     overflow: hidden
-    box-shadow: 4px 4px 13px rgba(0,0,0,.2)
+    // box-shadow: 4px 4px 13px rgba(0,0,0,.2)
     transition: all .16s ease
     &:hover
       box-shadow: 4px 5px 20px rgba(0,0,0,.3)
@@ -201,6 +204,18 @@
       .nameTag
         top: 30vh
         right: 35%
+    div[contain="riel"]
+      .nameTag
+        top: 22vh
+        right: 60%
+    div[contain="helve"]
+      .nameTag
+        top: 30vh
+        left: 0%
+    div[contain="lange"]
+      .nameTag
+        top: 23vh
+        left: 40%
     .nameTag
       position: absolute
       z-index: 2
@@ -232,10 +247,12 @@
         opacity: 1
   .mainInformation
     width: 40%
-    margin: 60px 0 100px
+    margin: 45px 0 100px
+    .textContainer
+      min-height: 200px
   .pictureInformation
     width: 60%
-    margin: 85px 0
+    margin: 70px 0
   .group-logo img
     max-width: 170px
     margin-bottom: 20px
@@ -294,3 +311,5 @@
     transform: translateY(-20px)
   100%
     transform: translateY(0px)
+.gachaPage
+  min-height: 100vh

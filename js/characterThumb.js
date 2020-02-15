@@ -6,13 +6,13 @@ var characterThumb = {
     if(dataImg){
       var target = $(".groupChar img#"+dataImg+"");
       $(".groupChar div[contain='"+dataImg+"']").addClass('on');
-      TweenLite.to(groupCharImg, .225, {css:{opacity: .15, filter: "grayscale(1) blur(2.5px)"}, ease:Power2.easeInOut});
+      TweenLite.to(groupCharImg, .225, {css:{opacity: .15, filter: "grayscale(1)"}, ease:Power2.easeInOut});
       TweenLite.to(target, .225, {css:{opacity: 1, filter: "grayscale(0)"}, ease:Power2.easeInOut});
     }
   },
   normalize: function(){
     $(".groupChar div[contain]").removeClass('on');
-    TweenLite.to(groupCharImg, .225, {css:{opacity: 1, filter: "grayscale(0) blur(0)"}, ease:Power2.easeInOut});
+    TweenLite.to(groupCharImg, .225, {css:{opacity: 1, filter: "grayscale(0)"}, ease:Power2.easeInOut});
 
   }
 }

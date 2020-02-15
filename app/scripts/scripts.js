@@ -8,13 +8,13 @@ var characterThumb = {
     if (dataImg) {
       var target = $(".groupChar img#" + dataImg + "");
       $(".groupChar div[contain='" + dataImg + "']").addClass('on');
-      TweenLite.to(groupCharImg, .225, { css: { opacity: .15, filter: "grayscale(1) blur(2.5px)" }, ease: Power2.easeInOut });
+      TweenLite.to(groupCharImg, .225, { css: { opacity: .15, filter: "grayscale(1)" }, ease: Power2.easeInOut });
       TweenLite.to(target, .225, { css: { opacity: 1, filter: "grayscale(0)" }, ease: Power2.easeInOut });
     }
   },
   normalize: function normalize() {
     $(".groupChar div[contain]").removeClass('on');
-    TweenLite.to(groupCharImg, .225, { css: { opacity: 1, filter: "grayscale(0) blur(0)" }, ease: Power2.easeInOut });
+    TweenLite.to(groupCharImg, .225, { css: { opacity: 1, filter: "grayscale(0)" }, ease: Power2.easeInOut });
   }
 };
 
@@ -25,6 +25,42 @@ charThumb.on('mouseover', function () {
 charThumb.on('mouseleave', function () {
   characterThumb.normalize();
 });
+'use strict';
+
+var h = document.querySelector('h1');
+var arr = {
+  ssr: ['100k', '80k'],
+  sr: ['10k', '5k', '2k', 'gelas'],
+  r: ['teh', 'permen', 'indomie', 'kopi', 'stiker']
+};
+
+var gacha = function gacha() {
+  var rand = Math.random() * 100;
+  var arRand = function arRand(max) {
+    var a = Math.round(Math.random() * max);
+    return a;
+  };
+
+  if (rand <= 1) {
+    var x = arRand(arr.ssr.length - 1);
+    var result = arr.ssr[x];
+    h.innerHTML = result;
+    document.querySelector('h2').innerHTML = "SSR";
+    document.querySelector('h2').setAttribute('type', 'SSR');
+  } else if (rand > 1 && rand <= 10) {
+    var x = arRand(arr.sr.length - 1);
+    var result = arr.sr[x];
+    h.innerHTML = result;
+    document.querySelector('h2').innerHTML = "SR";
+    document.querySelector('h2').setAttribute('type', 'SR');
+  } else if (rand > 10 && rand <= 100) {
+    var x = arRand(arr.r.length - 1);
+    var result = arr.r[x];
+    h.innerHTML = result;
+    document.querySelector('h2').innerHTML = "R";
+    document.querySelector('h2').setAttribute('type', 'R');
+  }
+};
 'use strict';
 
 var bgWrapper = $('.indexPage .bg-wrapper img');
@@ -59,8 +95,10 @@ liCharaPage.on('click', function () {
 });
 
 $(document).ready(function () {
-  $('.indexPage .bg-wrapper').parallax();
-  $('.characterPage .bg-wrapper').parallax();
+  if ($('.bg-wrapper')) {
+    $('.indexPage .bg-wrapper').parallax();
+    $('.characterPage .bg-wrapper').parallax();
+  }
 
   new TypeIt('#indexType', {
     strings: ["Have we been here? Have we met before? I don’t know", "Right now maybe our future self watching over us through memories", "Am i alive ? Are we all alive ? Are we real ? We don’t know", "Right now maybe our another self watching over us through reality..."],
@@ -71,6 +109,21 @@ $(document).ready(function () {
   setInterval(function () {
     randomOpacity(bgWrapper);
   }, 120);
+
+  var headline = document.getElementById('groupTitle');
+  var text = document.getElementById('groupDesc');
+  var titleText = new WordShuffler(headline, {
+    timeOffset: 10,
+    mixCapital: true,
+    mixSpecialCharacters: true,
+    needUpdate: true
+  });
+  var descText = new WordShuffler(text, {
+    timeOffset: 1,
+    mixCapital: true,
+    mixSpecialCharacters: true,
+    needUpdate: true
+  });
 });
 'use strict';
 
