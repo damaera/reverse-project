@@ -63,7 +63,7 @@ export const Layout: React.FunctionComponent<Props> = ({
           flex: 1;
           overflow: scroll;
           max-height: 100vh;
-          padding: 40px 20px;
+          padding: 0 20px;
         }
       `}
     </style>
