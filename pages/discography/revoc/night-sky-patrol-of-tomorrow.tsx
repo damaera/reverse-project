@@ -5,7 +5,7 @@ import { Lyric } from "../../../components/Lyric";
 import { Credit } from "../../../components/Credit";
 
 const Page: React.FunctionComponent = () => (
-  <Layout title="REVOC - Koi wa Sensou">
+  <Layout title="REVOC - Night Sky Patrol of Tomorrow">
     <Container>
       <h1>Asu no Yozora Shoukaihan</h1>
       <h3>Night Sky Patrol of Tommorow</h3>
