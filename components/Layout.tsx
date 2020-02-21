@@ -56,7 +56,7 @@ export const Layout: React.FunctionComponent<Props> = ({
 
         .layout-header {
           width: 220px;
-          background: #111;
+          background: var(--backgroundColor);
         }
 
         @media only screen and (max-width: 800px) {

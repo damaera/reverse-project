@@ -42,6 +42,7 @@ export const Lyric: React.FunctionComponent<Props> = ({
           }
           .lyric td {
             padding: 10px 0;
+            padding-right: 10px;
             font-size: 16px;
             opacity: 0.6;
           }

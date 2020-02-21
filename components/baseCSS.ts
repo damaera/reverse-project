@@ -2,7 +2,7 @@ import css from "styled-jsx/css";
 
 export const baseCSS = css.global`
   :root {
-    --backgroundColor: #111;
+    --backgroundColor: #060606;
     --textColor: #eee;
 
     --black: #000;
