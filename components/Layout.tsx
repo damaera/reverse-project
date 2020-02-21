@@ -59,6 +59,12 @@ export const Layout: React.FunctionComponent<Props> = ({
           background: #111;
         }
 
+        @media only screen and (max-width: 800px) {
+          .layout-header {
+            display: none;
+          }
+        }
+
         .layout-body {
           flex: 1;
           overflow: scroll;

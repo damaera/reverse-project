@@ -38,6 +38,15 @@ export const Lyric: React.FunctionComponent<Props> = ({
         {`
           .lyric {
             width: 100%;
+            margin-bottom: 100px;
+          }
+          .lyric td {
+            padding: 10px 0;
+            font-size: 16px;
+            opacity: 0.6;
+          }
+          .lyric td:hover {
+            opacity: 0.9;
           }
         `}
       </style>

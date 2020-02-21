@@ -21,6 +21,11 @@ export const Credit: React.FunctionComponent<Props> = ({ credit }) => {
       <style jsx>
         {`
           .credit {
+            font-size: 16px;
+            opacity: 0.8;
+          }
+          .credit:hover {
+            opacity: 0.9;
           }
         `}
       </style>

@@ -1,7 +1,7 @@
 import * as React from "react";
 import { Layout } from "../components/Layout";
 import { NextPage } from "next";
-import { RevocRotatingClock } from "./discography/revoc";
+import { RevocYoutubeTeaser } from "./discography/revoc";
 import { Container } from "../components/Container";
 
 const IndexPage: NextPage = () => {
@@ -14,7 +14,7 @@ const IndexPage: NextPage = () => {
           <br />
           Coming soon!
         </h3>
-        <RevocRotatingClock size={700} />
+        <RevocYoutubeTeaser height={600} />
       </Container>
     </Layout>
   );

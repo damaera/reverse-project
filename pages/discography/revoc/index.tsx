@@ -5,6 +5,20 @@ import Link from "next/link";
 
 const REVOC_IMG_PATH = "/img/discography/revoc";
 
+export const RevocYoutubeTeaser: React.FunctionComponent<{
+  width?: string | number;
+  height?: string | number;
+}> = ({ width = "100%", height = 315 }) => (
+  <iframe
+    width={width}
+    height={height}
+    src="https://www.youtube.com/embed/HA5nq71c-DA"
+    frameBorder="0"
+    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+    allowFullScreen
+  ></iframe>
+);
+
 const RotatingClockItem: React.FunctionComponent<{
   asset: string;
   size: number;
